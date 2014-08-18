@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Layout</title>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+
+  <style type="text/css">
+  html {
+    height: 100%;
+  }
+  body {
+    background: #eee;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    height: 100%;
+  }
+  .layout {
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .layout__status-bar {
+    display: table-row;
+    height: 15px;
+    background: rgb(255, 166, 173);
+  }
+  .layout__main {
+    display: table-row;
+  }
+  .layout__main-inner {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  .layout__header {
+    height: 48px;
+    display: table-row;
+    background: #D8D8D8;
+  }
+  .layout__content {
+    background: white;
+    display: table-row;
+    overflow: auto;
+  }
+  .layout__content-inner {
+    height: 100%;
+    overflow: auto;
+  }
+  .layout__tab-bar-ios,
+  .layout__tab-bar-android {
+    height: 50px;
+    display: table-row;
+  }
+
+  p {
+    margin: 10px;
+    color: #555;
+    font-size: .8em;
+    /* because MY EYES! */
+  }
+  </style>
+
+</head>
+
+<body>
+  <div class="layout">
+    <div class="layout__status-bar">status-bar</div>
+    <div class="layout__main">
+      <div class="layout__main-inner">
+        <div class="layout__header">header</div>
+        <div class="layout__tab-bar-android" style="display:none">tab-bar-android</div>
+        <div class="layout__content">
+          <div class="layout__content-inner">
+            content
+            <br>
+            <button onclick="javascript:$('.layout__status-bar').toggle()">layout__status-bar</button>
+            <br>
+            <button onclick="javascript:$('.layout__header').toggle()">layout__header</button>
+            <br>
+            <button onclick="javascript:$('.layout__tab-bar-android').toggle()">layout__tab-bar-android</button>
+            <br>
+            <button onclick="javascript:$('.layout__tab-bar-ios').toggle()">layout__tab-bar-ios</button>
+            <br>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis purus tortor, molestie non tellus sit amet, lacinia sagittis nisi. Vivamus sodales tortor feugiat porttitor euismod. Nunc gravida ipsum at iaculis euismod. Etiam vel magna purus. Curabitur eget egestas orci. Donec dictum nisi vitae libero imperdiet, fringilla volutpat leo laoreet. Etiam eleifend mollis tortor, eu varius orci mattis vel. Curabitur vel faucibus diam, ac pellentesque purus. In ultrices gravida quam, et bibendum mi tincidunt vitae. Fusce a convallis magna. Integer malesuada, lectus id tincidunt faucibus, augue mi auctor dolor, eget suscipit ante ligula vitae est. Vestibulum mi leo, mollis sit amet varius vel, volutpat quis mauris. Proin lacinia et dolor vitae dapibus. Morbi ornare interdum sapien, in sodales diam commodo molestie. Integer ut consequat mauris. Nam fringilla pellentesque ipsum nec bibendum.</p>
+
+<p>Ut sit amet consectetur ante, quis vehicula tortor. Nullam lobortis turpis ac sem sodales volutpat. Donec eget mi at orci vestibulum rutrum et auctor est. Mauris purus lacus, tempus vitae nulla quis, vestibulum viverra ante. Nullam sit amet turpis arcu. Pellentesque eget elit sem. Etiam pellentesque dignissim magna ut rutrum. Aenean quis condimentum felis, lacinia aliquam libero. Integer tellus ligula, fermentum sollicitudin suscipit nec, lacinia sit amet velit. Praesent in luctus tellus, quis pharetra urna. Duis ipsum mauris, lobortis vel iaculis non, pulvinar non libero. Sed ut purus eget tellus ultricies dictum fringilla a enim. Curabitur nibh nunc, semper et aliquet at, mollis a turpis. Maecenas quis sodales quam.</p>
+
+<p>Duis consectetur rutrum convallis. Sed tellus eros, blandit sed orci at, tempus ultrices velit. Nam consequat mauris vitae lacus vulputate luctus. Praesent suscipit porttitor enim, gravida tempus nisl vestibulum non. Etiam gravida augue in suscipit adipiscing. Vivamus libero diam, adipiscing fermentum augue quis, fringilla tincidunt nibh. Nam ullamcorper ac nulla sit amet ornare. Duis ligula eros, iaculis et elit ac, tempor elementum lacus.</p>
+
+<p>Quisque viverra hendrerit arcu, vitae dapibus diam pulvinar sit amet. Proin a posuere velit. Etiam volutpat orci et mollis pharetra. Sed ut erat laoreet, bibendum quam eu, elementum elit. Integer ullamcorper, nibh mollis tincidunt fringilla, ligula lorem ullamcorper justo, mattis tempus diam metus imperdiet nibh. Quisque adipiscing diam in lorem ultrices cursus. Maecenas mollis semper varius. Suspendisse ut dui pulvinar, eleifend tellus ut, dictum velit. Nullam sit amet ultricies mauris. Nulla sem est, vestibulum eu sapien a, auctor dictum sem. Cras mattis odio sit amet enim convallis, in auctor eros pulvinar.</p>
+
+<p>Fusce luctus risus quis euismod fringilla. Sed a pellentesque nisl. Donec commodo purus sed dolor semper suscipit. Nam porttitor, nisi eget sollicitudin ultricies, dolor felis suscipit nunc, porta aliquet tellus ligula vel justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae iaculis lorem. Vestibulum condimentum, velit vitae pharetra tempus, purus libero lacinia tellus, eget lobortis sem arcu sit amet mauris. Nullam lacinia magna vehicula lectus viverra facilisis. Sed porttitor tincidunt luctus.</p>
+          </div>
+        </div>
+        <div class="layout__tab-bar-ios">tab-bar-ios</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
