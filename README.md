@@ -9,15 +9,16 @@ Buy using [display:table](http://caniuse.com/css-table), absolute positiong, and
 This is not a revolutionary concept. It's more like "let me just put it here so I'll use it next time, instead of spending an hour figuring it out". 
 And maybe it'll save you some time too.
 
+Use the buttons to toggle the various elements, and watch the layout adapt itself.
 
 ## Screenshots
-![photo aug 18 5 26 00 pm](https://cloud.githubusercontent.com/assets/520550/3953780/5e25af76-26ef-11e4-94be-ef329f082f35.png)
+<img src="https://cloud.githubusercontent.com/assets/520550/3953780/5e25af76-26ef-11e4-94be-ef329f082f35.png" style="max-width: 320px;">
 
-![photo aug 18 5 26 07 pm](https://cloud.githubusercontent.com/assets/520550/3953781/611547c8-26ef-11e4-95fc-c3112b2cf383.png)
+<img src="https://cloud.githubusercontent.com/assets/520550/3953781/611547c8-26ef-11e4-95fc-c3112b2cf383.png" style="max-height: 320px;">
 
-![screenshot_2014-08-18-17-25-10](https://cloud.githubusercontent.com/assets/520550/3953783/6344f5e8-26ef-11e4-88f9-0635637a6374.png)
+<img src="https://cloud.githubusercontent.com/assets/520550/3953783/6344f5e8-26ef-11e4-88f9-0635637a6374.png" style="max-width: 360px;">
 
-![screenshot_2014-08-18-17-25-16](https://cloud.githubusercontent.com/assets/520550/3953784/65860496-26ef-11e4-8595-07d05d87ced1.png)
+<img src="https://cloud.githubusercontent.com/assets/520550/3953784/65860496-26ef-11e4-8595-07d05d87ced1.png" style="max-height: 360px;">
 
 
 ### Tab bars
