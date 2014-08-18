@@ -9,7 +9,7 @@ Buy using [display:table](http://caniuse.com/css-table), absolute positiong, and
 This is not a revolutionary concept. It's more like "let me just put it here so I'll use it next time, instead of spending an hour figuring it out".
 And maybe it'll save you some time too.
 
-[Try the demo](https://rawgit.com/p3drosola/css-mobile-app-layout/master/index.html). Use the buttons to toggle the various elements, and watch the layout adapt itself.
+[Try the demo](https://rawgit.com/p3drosola/css-mobile-app-layout/master/index.html). Use the buttons to toggle the various elements, and watch the layout adapt itself. Then read the source, there's literally only about 30 lines that are remotely interesting.
 
 ### Tab bars
 
